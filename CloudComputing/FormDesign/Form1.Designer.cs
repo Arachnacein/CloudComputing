@@ -28,10 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            SuspendLayout();
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1418, 844);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Cloud Computing - J.Łuka, Ł.Grochowski, M.Bielicki";
+            ResumeLayout(false);
         }
 
         #endregion
