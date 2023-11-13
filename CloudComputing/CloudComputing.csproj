@@ -6,6 +6,16 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>Resources\Icons\cloud_icon.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Icons\cloud_icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="FormDesign\Dialogs\" />
+    <Folder Include="Exceptions\" />
+  </ItemGroup>
 
 </Project>
