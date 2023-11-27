@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\source\\repos\\CloudComputing\\CloudComputing\\CloudComputing.csproj": {}
+    "C:\\Users\\Lukasz\\Desktop\\CloudComputing-master\\CloudComputing\\CloudComputing.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\source\\repos\\CloudComputing\\CloudComputing\\CloudComputing.csproj": {
+    "C:\\Users\\Lukasz\\Desktop\\CloudComputing-master\\CloudComputing\\CloudComputing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\CloudComputing\\CloudComputing\\CloudComputing.csproj",
+        "projectUniqueName": "C:\\Users\\Lukasz\\Desktop\\CloudComputing-master\\CloudComputing\\CloudComputing.csproj",
         "projectName": "CloudComputing",
-        "projectPath": "C:\\Users\\user\\source\\repos\\CloudComputing\\CloudComputing\\CloudComputing.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\CloudComputing\\CloudComputing\\obj\\",
+        "projectPath": "C:\\Users\\Lukasz\\Desktop\\CloudComputing-master\\CloudComputing\\CloudComputing.csproj",
+        "packagesPath": "C:\\Users\\Lukasz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lukasz\\Desktop\\CloudComputing-master\\CloudComputing\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lukasz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -63,7 +62,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
