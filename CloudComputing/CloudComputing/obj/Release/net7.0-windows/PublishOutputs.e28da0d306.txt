@@ -1,5 +1,0 @@
-C:\Users\Lukasz\Desktop\CloudComputing-master\CloudComputing\bin\Release\net7.0-windows\publish\CloudComputing.exe
-C:\Users\Lukasz\Desktop\CloudComputing-master\CloudComputing\bin\Release\net7.0-windows\publish\CloudComputing.dll
-C:\Users\Lukasz\Desktop\CloudComputing-master\CloudComputing\bin\Release\net7.0-windows\publish\CloudComputing.deps.json
-C:\Users\Lukasz\Desktop\CloudComputing-master\CloudComputing\bin\Release\net7.0-windows\publish\CloudComputing.runtimeconfig.json
-C:\Users\Lukasz\Desktop\CloudComputing-master\CloudComputing\bin\Release\net7.0-windows\publish\CloudComputing.pdb
