@@ -16,6 +16,7 @@
   <ItemGroup>
     <Folder Include="FormDesign\Dialogs\" />
     <Folder Include="Exceptions\" />
+    <Folder Include="DATA\" />
   </ItemGroup>
 
 </Project>

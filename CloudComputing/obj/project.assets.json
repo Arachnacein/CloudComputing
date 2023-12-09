@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lukasz\\Desktop\\CloudComputing-master\\CloudComputing\\CloudComputing.csproj",
+      "projectUniqueName": "C:\\Users\\Lukasz\\Desktop\\CloudComputing\\CloudComputing\\CloudComputing.csproj",
       "projectName": "CloudComputing",
-      "projectPath": "C:\\Users\\Lukasz\\Desktop\\CloudComputing-master\\CloudComputing\\CloudComputing.csproj",
+      "projectPath": "C:\\Users\\Lukasz\\Desktop\\CloudComputing\\CloudComputing\\CloudComputing.csproj",
       "packagesPath": "C:\\Users\\Lukasz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lukasz\\Desktop\\CloudComputing-master\\CloudComputing\\obj\\",
+      "outputPath": "C:\\Users\\Lukasz\\Desktop\\CloudComputing\\CloudComputing\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
