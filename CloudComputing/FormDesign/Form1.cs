@@ -1,4 +1,6 @@
+using CloudComputing.Resources;
 using CloudComputing.Services;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CloudComputing
 {
@@ -117,6 +119,7 @@ namespace CloudComputing
         {
             points = _readerService.ReadData("DATA/WSN-5d.txt");
 
+
             using (Graphics g = pictureBox1.CreateGraphics())
             {
                 Brush pointBrush = Brushes.Red;
@@ -153,6 +156,62 @@ namespace CloudComputing
                     }
 
                     g.DrawEllipse(borderPen, (int)(point.X * 7.5) - (int)(point.Radius * 7.5), (int)(point.Y * 7.5) - (int)(point.Radius * 7.5), 2 * (int)(point.Radius * 7.5), 2 * (int)(point.Radius * 7.5));
+                }
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var sortedPoints = points.OrderBy(p => p.X).ThenBy(p => p.Y).ToList();
+                using (StreamWriter writer = new StreamWriter(Consts.FilePath + "DATA/SortId-WSN-5d.txt"))
+                {
+                    writer.WriteLine($"#id X Y");
+                    int i = 1;
+                    foreach (var point in sortedPoints)
+                    {
+                        point.Id = i;
+                        writer.WriteLine($"{i} {point.X} {point.Y}");
+                        i++;
+                    }  
+                }
+               
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Nie wczytan ¿adnych punktów");
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            var sortedPoints = points.OrderBy(p => p.X).ThenBy(p => p.Y).ToList();
+            using (StreamWriter writer = new StreamWriter(Consts.FilePath + "DATA/WSN-5d-r" + textBox1.Text + ".txt"))
+            {
+                writer.WriteLine($"#Number of sensor{points.Count}");
+                writer.WriteLine($"#POI");
+                writer.WriteLine($"#Sensor form File DATA/SortId-WSN-5d.txt");
+                writer.WriteLine($"#Active Sensor");
+                writer.WriteLine($"#Range:{textBox1.Text}");
+                writer.WriteLine($"#id num_of_neighb id-of_neighbnours");
+                foreach (Models.Point PointCheck in sortedPoints)
+                {
+                    string neighbor = "";
+                    int count = 0;
+                    foreach (Models.Point PointToCalculate in sortedPoints)
+                    {
+                        
+                        if (PointCheck.Id != PointToCalculate.Id)
+                        {
+                            if (Math.Sqrt(Math.Pow(PointCheck.X - PointToCalculate.X, 2) + Math.Pow(PointCheck.Y - PointToCalculate.Y, 2)) < 2 * Convert.ToInt32(textBox1.Text))
+                            {
+                                neighbor += " " + PointToCalculate.Id;
+                                count++;
+                            }
+                        }
+                    }
+                    writer.WriteLine($"{PointCheck.Id}"+" "+count+" "+neighbor);
                 }
             }
         }

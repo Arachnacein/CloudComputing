@@ -202,6 +202,7 @@
             button6.TabIndex = 18;
             button6.Text = "Find WSN graph";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // button7
             // 
@@ -211,6 +212,7 @@
             button7.TabIndex = 19;
             button7.Text = "Calc sensor ID";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // pictureBox1
             // 

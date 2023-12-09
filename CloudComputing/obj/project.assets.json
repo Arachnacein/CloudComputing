@@ -8,23 +8,23 @@
     "net7.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Lukasz\\.nuget\\packages\\": {},
+    "C:\\Users\\Buszmen\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lukasz\\Desktop\\CloudComputing\\CloudComputing\\CloudComputing.csproj",
+      "projectUniqueName": "C:\\Users\\Buszmen\\Source\\Repos\\CloudComputing\\CloudComputing\\CloudComputing.csproj",
       "projectName": "CloudComputing",
-      "projectPath": "C:\\Users\\Lukasz\\Desktop\\CloudComputing\\CloudComputing\\CloudComputing.csproj",
-      "packagesPath": "C:\\Users\\Lukasz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lukasz\\Desktop\\CloudComputing\\CloudComputing\\obj\\",
+      "projectPath": "C:\\Users\\Buszmen\\Source\\Repos\\CloudComputing\\CloudComputing\\CloudComputing.csproj",
+      "packagesPath": "C:\\Users\\Buszmen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Buszmen\\Source\\Repos\\CloudComputing\\CloudComputing\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Lukasz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Buszmen\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
