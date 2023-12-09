@@ -29,11 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            dataGridView1 = new DataGridView();
-            checkBox1 = new CheckBox();
             label1 = new Label();
-            checkBox2 = new CheckBox();
-            checkBox3 = new CheckBox();
             label2 = new Label();
             button1 = new Button();
             label3 = new Label();
@@ -49,32 +45,12 @@
             button5 = new Button();
             button6 = new Button();
             button7 = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            pictureBox1 = new PictureBox();
+            radioButton1 = new RadioButton();
+            radioButton2 = new RadioButton();
+            radioButton3 = new RadioButton();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(351, 25);
-            dataGridView1.Margin = new Padding(2);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.RowTemplate.Height = 33;
-            dataGridView1.Size = new Size(718, 722);
-            dataGridView1.TabIndex = 0;
-            // 
-            // checkBox1
-            // 
-            checkBox1.AutoSize = true;
-            checkBox1.Checked = true;
-            checkBox1.CheckState = CheckState.Checked;
-            checkBox1.Location = new Point(12, 52);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(60, 19);
-            checkBox1.TabIndex = 1;
-            checkBox1.Text = "POI 36";
-            checkBox1.UseVisualStyleBackColor = true;
-            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // label1
             // 
@@ -86,26 +62,6 @@
             label1.TabIndex = 2;
             label1.Text = "Points of interests (POIs)";
             label1.Click += label1_Click;
-            // 
-            // checkBox2
-            // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(12, 77);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(66, 19);
-            checkBox2.TabIndex = 3;
-            checkBox2.Text = "POI 121";
-            checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(12, 102);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(66, 19);
-            checkBox3.TabIndex = 4;
-            checkBox3.Text = "POI 441";
-            checkBox3.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -126,6 +82,7 @@
             button1.TabIndex = 6;
             button1.Text = "Read WSN";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label3
             // 
@@ -164,15 +121,18 @@
             checkBox4.TabIndex = 10;
             checkBox4.Text = "Deterministically";
             checkBox4.UseVisualStyleBackColor = true;
+            checkBox4.CheckedChanged += checkBox4_CheckedChanged;
             // 
             // button2
             // 
+            button2.Enabled = false;
             button2.Location = new Point(12, 351);
             button2.Name = "button2";
             button2.Size = new Size(273, 38);
             button2.TabIndex = 11;
-            button2.Text = "Read WSN states";
+            button2.Text = "Read WSN on/off";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // checkBox5
             // 
@@ -214,6 +174,7 @@
             button3.TabIndex = 15;
             button3.Text = "Show WSN";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -251,11 +212,59 @@
             button7.Text = "Calc sensor ID";
             button7.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(355, 25);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(750, 750);
+            pictureBox1.TabIndex = 20;
+            pictureBox1.TabStop = false;
+            pictureBox1.Paint += pictureBox1_Paint;
+            // 
+            // radioButton1
+            // 
+            radioButton1.AutoSize = true;
+            radioButton1.Checked = true;
+            radioButton1.Location = new Point(12, 53);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(59, 19);
+            radioButton1.TabIndex = 21;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "POI 36";
+            radioButton1.UseVisualStyleBackColor = true;
+            radioButton1.CheckedChanged += radioButton_CheckedChanged;
+            // 
+            // radioButton2
+            // 
+            radioButton2.AutoSize = true;
+            radioButton2.Location = new Point(11, 78);
+            radioButton2.Name = "radioButton2";
+            radioButton2.Size = new Size(65, 19);
+            radioButton2.TabIndex = 22;
+            radioButton2.Text = "POI 121";
+            radioButton2.UseVisualStyleBackColor = true;
+            radioButton2.CheckedChanged += radioButton_CheckedChanged;
+            // 
+            // radioButton3
+            // 
+            radioButton3.AutoSize = true;
+            radioButton3.Location = new Point(12, 104);
+            radioButton3.Name = "radioButton3";
+            radioButton3.Size = new Size(65, 19);
+            radioButton3.TabIndex = 23;
+            radioButton3.Text = "POI 441";
+            radioButton3.UseVisualStyleBackColor = true;
+            radioButton3.CheckedChanged += radioButton_CheckedChanged;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1091, 772);
+            ClientSize = new Size(1138, 800);
+            Controls.Add(radioButton3);
+            Controls.Add(radioButton2);
+            Controls.Add(radioButton1);
+            Controls.Add(pictureBox1);
             Controls.Add(button7);
             Controls.Add(button6);
             Controls.Add(button5);
@@ -271,10 +280,6 @@
             Controls.Add(label3);
             Controls.Add(button1);
             Controls.Add(label2);
-            Controls.Add(checkBox3);
-            Controls.Add(checkBox2);
-            Controls.Add(dataGridView1);
-            Controls.Add(checkBox1);
             Controls.Add(label1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(2);
@@ -282,22 +287,17 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Cloud Computing - J.Łuka, Ł.Grochowski, M.Bielicki";
             Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn xDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn yDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn radiusDataGridViewTextBoxColumn;
         private DataGridViewCheckBoxColumn isActiveDataGridViewCheckBoxColumn;
-        protected CheckBox checkBox1;
         private Label label1;
-        protected CheckBox checkBox2;
-        protected CheckBox checkBox3;
         private Label label2;
         private Button button1;
         private Label label3;
@@ -313,5 +313,9 @@
         private Button button5;
         private Button button6;
         private Button button7;
+        private PictureBox pictureBox1;
+        private RadioButton radioButton1;
+        private RadioButton radioButton2;
+        private RadioButton radioButton3;
     }
 }
