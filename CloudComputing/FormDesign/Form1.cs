@@ -189,7 +189,7 @@ namespace CloudComputing
             var sortedPoints = points.OrderBy(p => p.X).ThenBy(p => p.Y).ToList();
             using (StreamWriter writer = new StreamWriter(Consts.FilePath + "DATA/WSN-5d-r" + textBox1.Text + ".txt"))
             {
-                writer.WriteLine($"#Number of sensor{points.Count}");
+                writer.WriteLine($"#Number oof sensor{points.Count}");
                 writer.WriteLine($"#POI");
                 writer.WriteLine($"#Sensor form File DATA/SortId-WSN-5d.txt");
                 writer.WriteLine($"#Active Sensor");
