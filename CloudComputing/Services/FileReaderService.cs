@@ -26,6 +26,16 @@ namespace CloudComputing.Services
                     line = reader.ReadLine();
                 }
                 reader.Close();
+                var sortedPoints = Points.OrderBy(p => p.X).ThenBy(p => p.Y).ToList();
+                {
+                    int i = 1;
+                    foreach (var point in sortedPoints)
+                    {
+                        point.Id = i;
+                        i++;
+                    }
+                }
+
                 return Points;
             }
             catch (Exception e)

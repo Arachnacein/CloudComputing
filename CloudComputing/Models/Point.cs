@@ -4,7 +4,7 @@
     {
         public double X { get; set; }
         public double Y { get; set; }
-
+        public int Id {  get; set; }
         private int _radius;
         public int Radius
         {
@@ -26,5 +26,9 @@
             Radius = radius;
             IsActive = isActive;
         }
+        public string ToString()
+        {
+            return "x= "+ X.ToString() + "y="+Y.ToString() + "r="+Radius.ToString() + "id="+Id.ToString();
+        }   
     }
 }
