@@ -145,7 +145,7 @@ namespace CloudComputing
             {
                 foreach (var point in points)
                 {
-                    Brush fillBrush = new SolidBrush(Color.FromArgb(128, Color.Yellow)); // Pó³przezroczysty ¿ó³ty
+                    Brush fillBrush = new SolidBrush(Color.FromArgb(128, Color.Yellow)); // Pó³przeasdawdroczysty ¿ó³ty
                     Pen borderPen = new Pen(Color.Black, 1);
 
                     if (point.IsActive)
