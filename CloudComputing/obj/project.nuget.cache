@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "X8SO1nWhz8PVBXu0UbNIMwh6eigIAmKz/Notx9N7quIwVVT4Wx6yRP/IncyaqxzXyirnCzkvM00JlgCoYSGsHg==",
+  "dgSpecHash": "iMaJRTu3ZErJw9bItIPdFTziIMS6c3PdUkC497IrOiL5AdXyEWc0nSXq8kVhfo6Oqp/4W5SETnthPonkED/1sw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\repos\\CloudComputing\\CloudComputing\\CloudComputing.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Lukasz\\Desktop\\CloudComputing-main\\CloudComputing\\CloudComputing.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Lukasz\\.nuget\\packages\\oxyplot.core\\2.1.2\\oxyplot.core.2.1.2.nupkg.sha512",
+    "C:\\Users\\Lukasz\\.nuget\\packages\\oxyplot.windowsforms\\2.1.2\\oxyplot.windowsforms.2.1.2.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -2,7 +2,7 @@
 {
     public class Consts
     {
-        public const string FilePath = "C:\\CloudComputing\\";
+        public const string FilePath = "../../../";
 
     }
 }
